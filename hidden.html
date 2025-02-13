@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Question</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            font-family: "Georgia", serif;
+            color: white;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100vw;
+            min-height: 100vh;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+        }
+
+        .poem-box {
+            background: linear-gradient(135deg, rgba(50, 50, 50, 0.8), rgba(30, 30, 30, 0.8));
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 40%;
+            font-size: 1.7rem;
+            line-height: 1.6;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
+            position: relative;
+        }
+
+        .poem-box::before {
+            content: "❤️";
+            font-size: 2rem;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @media (max-width: 768px) {
+            .poem-box {
+                max-width: 80%;
+                font-size: 1.3rem;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="rain.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Poem Box -->
+    <div class="poem-box">
+        Your deep brown eyes<br>
+        are as vast as the ocean,<br>
+        pulling me in with each gentle tide.<br><br>
+
+        When I look at you,<br>
+        I feel the lull, the roll,<br>
+        a quiet rhythm I never want to leave.<br><br>
+
+        Your voice—<br>
+        a melody softer than waves at dawn.<br>
+        Your body—<br>
+        a sculpture kissed by gods.<br><br>
+
+        My Aphrodite,<br>
+        you are everything beautiful to me.
+    </div>
+
+</body>
+</html>
