@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Notes Wall</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            background-color: #f7e4e4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff6f61;
+        }
+
+        .sticky-note {
+            display: inline-block;
+            background-color: #ffeb3b;
+            color: #2f2f2f;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: 150px;
+            position: relative;
+            font-size: 1rem;
+        }
+
+        .sticky-note .username {
+            font-weight: bold;
+        }
+
+        .note-wall {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Love Notes Wall</h1>
+
+    <!-- Section for sticky notes wall -->
+    <div class="note-wall">
+        <!-- Sticky Note 1 -->
+        <div class="sticky-note">
+            <div class="username">From Paul</div>
+            <p>I turned a non-committal Libra to someone who calls me their boyfriend 😏</p>
+        </div>
+
+        <!-- Sticky Note 2 -->
+        <div class="sticky-note">
+            <div class="username">From your Lover</div>
+            <p>You are so beautiful</p>
+        </div>
+
+        <!-- Sticky Note 3 -->
+        <div class="sticky-note">
+            <div class="username">From The one for you</div>
+            <p>I love the way your nose wiggles when you swirl water around your mouth</p>
+        </div>
+
+        <!-- Sticky Note 4 -->
+        <div class="sticky-note">
+            <div class="username">From your boyfriend 🤭</div>
+            <p>Countdown until Ireland</p>
+            <div id="countdown"></div>
+        </div>
+
+        <div class="sticky-note">
+            <div class="username">From big muscle man</div>
+            <img src="anime.jpeg" style="width:140px; height:120px; box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);">
+        </div>
+
+        <div class="sticky-note">
+            <div class="username">From Paulie Boy</div>
+            <p>There are so many things I want to do with you in <a href="dateideas.html">life</a></p>
+        </div>
+
+    </div>
+
+<script>
+        const targetDate = new Date("May 25, 2025 00:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+
+            // Time calculations for days, hours, minutes, and seconds
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            // Display the result
+            document.getElementById("countdown").innerHTML =
+                `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            // If the countdown is over
+            if (timeLeft <= 0) {
+                document.getElementById("countdown").innerHTML = "It's time! 🎉";
+            }
+        }
+
+        // Update the countdown every second
+        setInterval(updateCountdown, 1000);
+    </script>
+
+</body>
+</html>

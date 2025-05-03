@@ -22,10 +22,14 @@
 </head>
 <body>
     <button id="q">Click me</button>
+    <button id="nq"> No! Click me</button>
 </body>
     <script>
         document.getElementById("q").addEventListener("click", function() {
             window.location.href = "question.html"; // Redirect to yes.html
+        });
+        document.getElementById("nq").addEventListener("click", function() {
+            window.location.href = "newpage.html"; // Redirect to yes.html
         });
     </script>
 </html>
