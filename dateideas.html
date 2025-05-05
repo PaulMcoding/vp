@@ -1,240 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date Ideas</title>
-    <style>
-        body {
-            font-family: "Georgia", serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Date Ideas</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
 
-        .container {
-            background-color: #ffffff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            width: 80%;
-            max-width: 800px;
-            overflow-y: auto;
-            height: 80vh;
-        }
+    .container {
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 800px;
+      overflow-y: auto;
+      height: 80vh;
+    }
 
-        h1 {
-            color: #ff6f61;
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
+    h1 {
+      color: #ff6f61;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
 
-        h2 {
-            color: #ff6f61;
-            font-size: 2rem;
-            margin-top: 30px;
-            text-decoration: underline;
-        }
+    h2 {
+      color: #ff6f61;
+      font-size: 2rem;
+      margin-top: 30px;
+      text-decoration: underline;
+    }
 
-        .category {
-            margin-top: 20px;
-        }
+    .category {
+      margin-top: 20px;
+    }
 
-        .date-idea {
-            background-color: #ffe2e2;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            font-size: 1.2rem;
-            position: relative;
-        }
+    .date-idea {
+      background-color: #ffe2e2;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 1.2rem;
+      position: relative;
+    }
 
-        .date-idea::before {
-            font-size: 2rem;
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+    .date-idea p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
 
-        .date-idea p {
-            margin: 0;
-            font-size: 1.1rem;
-        }
+    .add-idea-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff6f61;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
 
-        .add-idea-btn {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #ff6f61;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-        }
+    .add-idea-btn:hover {
+      background-color: #ff3d33;
+    }
 
-        .add-idea-btn:hover {
-            background-color: #ff3d33;
-        }
-
-        .add-idea-input {
-            margin-top: 20px;
-            width: 80%;
-            padding: 10px;
-            font-size: 1rem;
-            border: 1px solid #ff6f61;
-            border-radius: 5px;
-        }
-    </style>
+    .add-idea-input {
+      margin-top: 20px;
+      width: 80%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ff6f61;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Date Ideas for Us</h1>
 
-    <div class="container">
-        <h1>Date Ideas for Us</h1>
+    <div class="category">
+      <h2>Exploration</h2>
+      <div class="date-idea"><p>Travel to a new country and try our best to experience the culture</p></div>
+      <div class="date-idea"><p>Go for a hike and discover hidden spots together</p></div>
+      <div class="date-idea"><p>Find and explore abandoned buildings together</p></div>
+    </div>
 
-        <!-- Exploration Section -->
-        <div class="category">
-            <h2>Exploration</h2>
-            <div class="date-idea">
-                <p>Travel to a new country and try our best to experience the culture</p>
-            </div>
-            <div class="date-idea">
-                <p>Go for a hike and discover hidden spots together</p>
-            </div>
-          <div class="date-idea">
-                <p>Find and explore abandoned buildings together</p>
-            </div>
-        </div>
+    <div class="category">
+      <h2>Activity</h2>
+      <div class="date-idea"><p>Go on Gym dates together</p></div>
+      <div class="date-idea"><p>Play a sport we are both interested in</p></div>
+      <div class="date-idea"><p>Play a sport neither of us are interested in</p></div>
+      <div class="date-idea"><p>Archery</p></div>
+      <div class="date-idea"><p>Kayaking</p></div>
+    </div>
 
-      <div class="category">
-            <h2>Activity</h2>
-            <div class="date-idea">
-                <p>Go on Gym dates together</p>
-            </div>
-            <div class="date-idea">
-                <p>Play a sport we are both interested in</p>
-            </div>
-            <div class="date-idea">
-                <p>Play a sport neither of us are interested in</p>
-            </div>
-            <div class="date-idea">
-                <p>Archery</p>
-            </div>
-            <div class="date-idea">
-                <p>Kayaking</p>
-            </div>
-        </div>
+    <div class="category">
+      <h2>Getting to Know Each Other</h2>
+      <div class="date-idea"><p>Have a "questions night" where we ask each other deep and meaningful questions.</p></div>
+      <div class="date-idea"><p>Do a personality quiz together and discuss our results</p></div>
+      <div class="date-idea"><p>Talk about our childhood memories</p></div>
+      <div class="date-idea"><p>Strangers Date (locked in already for Galway)</p></div>
+      <div class="date-idea"><p>Share our goals in life, singular and shared goals</p></div>
+    </div>
 
-        <!-- Getting to Know Each Other Section -->
-        <div class="category">
-            <h2>Getting to Know Each Other</h2>
-            <div class="date-idea">
-                <p>Have a "questions night" where we ask each other deep and meaningful questions.</p>
-            </div>
-            <div class="date-idea">
-                <p>Do a personality quiz together and discuss our results</p>
-            </div>
-          <div class="date-idea">
-                <p>Talk about our childhood memories</p>
-            </div>
-          <div class="date-idea">
-                <p>Strangers Date (locked in already for Galway)</p>
-            </div>
-          <div class="date-idea">
-                <p>Share our goals in life, singular and shared goals</p>
-            </div>
-        </div>
+    <div class="category">
+      <h2>Creative Dates</h2>
+      <div class="date-idea"><p>Paint a picture of each other ✅</p></div>
+      <div class="date-idea"><p>Try a new recipe together</p></div>
+      <div class="date-idea"><p>Paint a picture of a shared scene</p></div>
+      <div class="date-idea"><p>Make clay animals</p></div>
+      <div class="date-idea"><p>Make bouquet cards</p></div>
+      <div class="date-idea"><p>Photoshoot date where we each act like a model while the other takes pictures</p></div>
+    </div>
 
-        <!-- Creative Date Ideas -->
-        <div class="category">
-            <h2>Creative Dates</h2>
-            <div class="date-idea">
-                <p>Paint a picture of eachother ✅</p>
-            </div>
-            <div class="date-idea">
-                <p>Try a new recipe together</p>
-            </div>
-          <div class="date-idea">
-                <p>Paint a Picture of a shared scene</p>
-            </div>
-          <div class="date-idea">
-                <p>Make Clay animals</p>
-            </div>
-          <div class="date-idea">
-                <p>Make bouquet cards</p>
-            </div>
-          <div class="date-idea">
-                <p>Photoshoot date where we each act like a model while the other takes pictures</p>
-            </div>
-        </div>
+    <div class="category">
+      <h2>Silly Dates</h2>
+      <div class="date-idea"><p>Go for a walk and see who can get the most "white guy nods"</p></div>
+      <div class="date-idea"><p>Name all the fish in an aquarium</p></div>
+      <div class="date-idea"><p>Decide a new pope ourselves</p></div>
+      <div class="date-idea"><p>Go to a charity shop and assemble an army</p></div>
+      <div class="date-idea"><p>Stand guard at a doorway, one can tell the truth the other can only lie</p></div>
+      <div class="date-idea"><p>Go to IKEA and stage family fights in the sitting rooms</p></div>
+      <div class="date-idea"><p>Invoke a dark ritual</p></div>
+      <div class="date-idea"><p>Have a talk show date</p></div>
+      <div class="date-idea"><p>Create a fake tourist vlog around a town, interview locals and see the sights</p></div>
+      <div class="date-idea"><p>Dress like spies and communicate only through coded notes all day</p></div>
+      <div class="date-idea"><p>Go to a hardware store and pretend we are trying to build a spaceship</p></div>
+    </div>
 
-                <div class="category">
-            <h2>Silly Dates</h2>
-            <div class="date-idea">
-                <p>Go for a walk and see who can get the mose "white guy nods"</p>
-            </div>
-            <div class="date-idea">
-                <p>Name all the fish in an aquarium</p>
-            </div>
-          <div class="date-idea">
-                <p>Decide a new pope ourselves</p>
-            </div>
-          <div class="date-idea">
-                <p>Go to a charity shop and assemble an army</p>
-            </div>
-          <div class="date-idea">
-                <p>stand guard at a doorway, one can tell the truth the other can only lie </p>
-            </div>
-          <div class="date-idea">
-                <p>go to IKEA and stage family fights in the sitting rooms</p>
-            </div>
-          <div class="date-idea">
-                <p>invoke a dark ritual</p>
-            </div>
-          <div class="date-idea">
-                <p>Have a talk show date</p>
-            </div>
-        </div>
-        <div class="date-idea">
-                <p>Create a fake tourist vlog around a town, interview locals and see the sights</p>
-            </div>
-        </div>
-        <div class="date-idea">
-                <p>Dress like spies and communicate only through coded notes all day.</p>
-            </div>
-        </div>
-        <div class="date-idea">
-                <p>Go to a hardware store and pretend we are trying to build a spaceship.</p>
-            </div>
-        </div>
-
-        <div class="category">
-            <h2>Romantic Dates</h2>
-            <div class="date-idea">
-                <p>Go out for a candlelit dinner</p>
-            </div>
-            <div class="date-idea">
-                <p>Do our own candlelit dinner</p>
-            </div>
-          <div class="date-idea">
-                <p>Cook our favourite meals of all time for eachother</p>
-            </div>
-          <div class="date-idea">
-                <p>Hot tub movie date</p>
-            </div>
-          <div class="date-idea">
-                <p>Silent cuddle session</p>
-            </div>
-          <div class="date-idea">
-                <p>Stay up until 2am talking about our life together and plans for the future</p>
-            </div>
-        </div>
-
+    <div class="category">
+      <h2>Romantic Dates</h2>
+      <div class="date-idea"><p>Go out for a candlelit dinner</p></div>
+      <div class="date-idea"><p>Do our own candlelit dinner</p></div>
+      <div class="date-idea"><p>Cook our favourite meals of all time for each other</p></div>
+      <div class="date-idea"><p>Hot tub movie date</p></div>
+      <div class="date-idea"><p>Silent cuddle session</p></div>
+      <div class="date-idea"><p>Stay up until 2am talking about our life together and plans for the future</p></div>
+    </div>
+  </div>
 </body>
 </html>
