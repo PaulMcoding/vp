@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e48f4ab9-0102-41c4-b5ea-56dbf07526d1" name="Changes" comment="new ideas 2">
+    <list default="true" id="e48f4ab9-0102-41c4-b5ea-56dbf07526d1" name="Changes" comment="new ideas 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dateideas.html" beforeDir="false" afterPath="$PROJECT_DIR$/dateideas.html" afterDir="false" />
     </list>
@@ -66,7 +66,35 @@
       <option name="project" value="LOCAL" />
       <updated>1746477921871</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new ideas 3">
+      <created>1746478123535</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746478123535</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new ideas 4">
+      <created>1746478189723</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746478189723</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new ideas 5">
+      <created>1746478261505</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746478261505</updated>
+    </task>
+    <task id="LOCAL-00006" summary="new ideas 5">
+      <created>1746478288637</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746478288637</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +111,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new ideas" />
     <MESSAGE value="new ideas 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="new ideas 2" />
+    <MESSAGE value="new ideas 3" />
+    <MESSAGE value="new ideas 4" />
+    <MESSAGE value="new ideas 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="new ideas 5" />
   </component>
 </project>
